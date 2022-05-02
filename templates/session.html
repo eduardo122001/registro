@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+{{ name }} Bienvenido usuario {{usuario}}
+{% endblock %}
+
+{% block body %}
+
+
+<table align="center">
+	<tr>
+		<td><h3>DATOS GUARDADOS:<h3/></td>
+	</tr>
+	<tr>
+		<td><h3>Nombres:<h3/></td>
+		<td><h3>Apellidos:<h3/></td>
+	</tr>
+	<tr>
+		<td>{{name}}</td>
+		<td>{{apellido}}</td>
+	</tr>
+	<tr>
+		<td><h3>Nacionalidad:<h3/></td>
+		<td><h3>Lugar de residencia:<h3/></td>
+	</tr>
+	<tr>
+		<td>{{nacionalidad}}</td>
+		<td>{{residencia}}</td>
+	</tr>
+	<tr>
+		<td><h3>Fecha de nacimiento:<h3/></td>
+	</tr>
+	<tr>
+		<td>{{dia}} de {{mes}} del {{año}}</td>
+	</tr>
+	<tr>
+		<td><h3>Estado civil:<h3/></td>
+		<td><h3>Visto como:<h3/></td>
+	</tr>
+	<tr>
+		<td>{{estado}}</td>
+		<td>{{profesion}}</td>
+	</tr>
+{% endblock %}

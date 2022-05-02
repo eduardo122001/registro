@@ -1,0 +1,28 @@
+
+{% extends "layout2.html" %}
+
+{% block heading %}
+EMPADRONAMIENTO NACIONAL
+{% endblock %}
+
+{% block body %}
+<h4>*Favor de llenar todo integramente para contar en el registro*<h4/>
+{% endblock %}
+{% block data %}
+	<h3>Nombre de usuario<h3/>
+	<input type="text" name="usuario" placeholder="Usuario">
+	<h3>Nombre encontrado en el registro civil<h3/>
+	<input type="text" name="nombre" placeholder="Nombres">
+	<input type="text" name="apellido" placeholder="Apellidos">
+	<h3>Residencia actual <h3/>
+	<input type="text" name="nacionalidad" placeholder="Nacionalidad">
+	<input type="text" name="residencia" placeholder="Pais donde vive">
+	<h3>Fecha de nacimiento<h3/>
+	<input type="text" name="año" placeholder="Año">
+	<input type="text" name="Mes" placeholder="Mes(ejemplo: mayo)">
+	<input type="text" name="dia" placeholder="Día">
+	<h3>Actividades<h3/>
+	<input type="text" name="profesion" placeholder="Pofesión o nivel academico">
+	<input type="text" name="estado" placeholder="Estado civil">
+	
+{% endblock %}
